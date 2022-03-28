@@ -1,11 +1,9 @@
-import './glslx.js'
-
 /** @type {import('glslx')} */
-globalThis.GLSLX
+let GLSLX = require('./glslx.js')
 
 let dev = process.env.NODE_ENV != 'production'
 
-export default (/** @type {import('glslx').CompileArgs} */ args) =>
+module.exports = (/** @type {import('glslx').CompileArgs} */ args) =>
   /** @type {import('rollup').Plugin} */
   ({
     name: 'glslx',
