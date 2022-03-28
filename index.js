@@ -1,4 +1,7 @@
-import GLSLX from 'glslx'
+import './glslx.js'
+
+/** @type {import('glslx')} */
+globalThis.GLSLX
 
 let dev = process.env.NODE_ENV != 'production'
 
@@ -8,7 +11,7 @@ export default (/** @type {import('glslx').CompileArgs} */ args) =>
     name: 'glslx',
 
     transform(code, id) {
-      if (!/\.((glslx?)|(vert)|(frag))$/.test(id)) return code
+      if (!/((glslx?)|(vert)|(frag))$/.test(id)) return code
 
       let glslx = id.endsWith('x')
 
