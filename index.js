@@ -11,16 +11,13 @@ export default (/** @type {import('glslx').CompileArgs} */ args) =>
     name: 'glslx',
 
     transform(code, id) {
-      if (!/((glslx?)|(vert)|(frag))$/.test(id)) return code
+      if (!/\.((glslx?)|(vert)|(frag))$/.test(id)) return code
 
       let glslx = id.endsWith('x')
 
       args = args || {
         format: 'js',
         renaming: dev || !glslx ? 'none' : 'all',
-        disableRewriting: dev,
-        prettyPrint: dev,
-        keepSymbols: dev,
       }
 
       let result = GLSLX.compile({ name: id, contents: code }, args)
