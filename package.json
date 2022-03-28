@@ -1,0 +1,27 @@
+{
+  "name": "rollup-plugin-glslx",
+  "version": "0.1.0",
+  "description": "Import GLSL/GLSLX files.",
+  "homepage": "https://github.com/anotherzxx/rollup-plugin-glslx",
+  "keywords": [
+    "glsl",
+    "glslx",
+    "rollup-plugin",
+    "vite-plugin"
+  ],
+  "author": "anotherzxx",
+  "repository": {
+    "type": "git",
+    "url": "git+https@github.com:anotherzxx/rollup-plugin-glslx.git"
+  },
+  "license": "MIT",
+  "files": [
+    "*.js"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "devDependencies": {
+    "glslx": "^0.2.13",
+    "rollup": "^2.70.1"
+  }
+}
