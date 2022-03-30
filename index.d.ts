@@ -1,6 +1,6 @@
-import * as glslx from 'glslx'
-import * as rollup from 'rollup'
+import { CompileArgs } from 'glslx'
+import { Plugin } from 'rollup'
 
-declare function glslxPlugin(args: glslx.CompileArgs): rollup.Plugin
+declare function glslxPlugin(args: CompileArgs): Plugin
 
 export = glslxPlugin

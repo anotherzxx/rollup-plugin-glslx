@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-glslx",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Import GLSL/GLSLX files.",
   "keywords": [
     "glsl",
@@ -12,8 +12,10 @@
   "license": "MIT",
   "main": "index.js",
   "types": "index.d.ts",
+  "dependencies": {
+    "glslx": "^0.2.13"
+  },
   "devDependencies": {
-    "glslx": "^0.2.13",
     "rollup": "^2.70.1"
   }
 }

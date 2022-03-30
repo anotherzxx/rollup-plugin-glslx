@@ -1,5 +1,4 @@
-/** @type {import('glslx')} */
-let GLSLX = require('./glslx.js')
+let GLSLX = require('glslx')
 
 let dev = process.env.NODE_ENV != 'production'
 
